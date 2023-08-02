@@ -1,0 +1,35 @@
+@mixin ComplexityStyle(){
+    font-size: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+#sidebar{
+    // background-color: #555;
+    border-left: 2px solid #333;
+
+
+    .time-com{
+        margin-bottom: 3rem;
+        padding: 0 1rem;
+        
+        .time-com-heading{
+            @include ComplexityStyle();
+
+        }
+        .time-com-para{
+            font-size: 2rem; 
+        }
+    }
+
+    .speed-com{
+        padding: 0 1rem;
+
+        .speed-com-heading{
+            @include ComplexityStyle();
+        }
+        .space-com-para{
+            font-size: 2rem;
+        }
+    }
+}

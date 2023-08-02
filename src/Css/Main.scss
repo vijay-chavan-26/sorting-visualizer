@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+#root{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 30rem;
+    grid-template-rows: 18rem 1fr;
+    // overflow: hidden;
+
+    @import "header";
+    @import "main";
+    @import "sidebar";
+}
+@import "responsive";

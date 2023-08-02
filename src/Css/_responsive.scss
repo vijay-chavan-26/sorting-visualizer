@@ -1,0 +1,128 @@
+@mixin media($width) {
+    @media (max-width: $width) {
+        @content;
+    }
+}
+
+@include media(1000px) {
+    html {
+        font-size: 52.5%;
+    }
+}
+
+@include media(850px) {
+    #root {
+        display: block;
+
+        #header {
+            padding-bottom: 2rem;
+
+            .array-operations {
+                margin-top: 4rem;
+                margin-left: 3rem;
+            }
+        }
+
+        #sidebar {
+            border-left: none;
+            border-top: 2px solid #333;
+            display: flex;
+            padding-top: 3rem;
+            justify-content: space-around;
+        }
+
+        #main {
+            padding: 2rem;
+        }
+
+    }
+}
+
+@include media(600px) {
+    html {
+        font-size: 42.5%;
+    }
+}
+
+@include media(500px) {
+    html {
+        font-size: 35%;
+    }
+
+    #root {
+        #header {
+            // background-color: #eee;
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+
+            .array-operations {
+                width: 100%;
+                margin: 0;
+                margin-top: 5rem;
+                margin-left: 2rem;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+
+                .generate-btn {
+                    margin: 0 2rem;
+                }
+            }
+
+            input[type='range'] {
+                width: 12rem;
+                height: 1rem;
+                margin-left: 0.8rem;
+            }
+
+            .sort-type {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@include media(430px) {
+    html {
+        font-size: 30%;
+    }
+
+    #root {
+        #header {
+            .array-operations {
+                width: 100%;
+                margin: 0;
+                margin-top: 5rem;
+                margin-left: 2rem;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: 1fr 1fr;
+                grid-template-areas:
+                    "size btn"
+                    "speed btn";
+
+                .arr-size-con{
+                    grid-area: size;
+                }
+
+                .arr-speed-con{
+                    grid-area: speed;
+                }
+
+                .generate-btn {
+                    grid-area: btn;
+                    width: 22rem;
+                    height: 5rem;
+                    margin: auto;
+                }
+            }
+        }
+
+    }
+}
+
+@include media(600px) {
+    html {
+        font-size: 25%;
+    }
+}

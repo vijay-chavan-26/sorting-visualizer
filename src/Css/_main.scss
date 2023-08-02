@@ -1,0 +1,23 @@
+#main{
+    padding-top: 5rem;
+
+    .array-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        height: 80%;
+        padding: 2rem 2rem 0 2rem;
+
+        .arrDiv {
+            border: 1px solid #333;
+            text-align: center;
+            padding-top: 0.5rem;
+        }
+    }
+
+    #size-text{
+        margin-left: 2rem;
+        margin-top: 1.5rem;
+        font-size: 2.5rem;
+    }
+}

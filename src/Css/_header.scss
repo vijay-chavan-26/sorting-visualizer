@@ -1,0 +1,65 @@
+$lightBlack: #333;
+
+#header{
+    border-bottom: 2px solid $lightBlack;
+    grid-column: span 2;
+    display: flex;
+
+    .array-operations{
+        width: 30%;
+        text-align: center;
+        margin: auto;
+
+        p{
+            display: inline-block;
+            margin-top: 1rem;
+            font-size: 2rem;
+        }
+
+        .generate-btn{
+            color: white;
+            // border: 1px solid Red;
+            background-color: rgb(111, 111, 236);
+            box-shadow: 3px 3px 5px #555;
+            margin-top: 2rem;
+            font-size: 1.5rem;
+        }
+    }
+
+    input[type='range']{
+        accent-color: $lightBlack;
+        width: 15rem;
+        height: 1rem;
+        margin-left: 1.5rem;
+    }
+
+    .sort-type{
+        width: 70%;
+
+
+        .main-heading{
+            color: $lightBlack;
+            text-transform: uppercase;
+            text-align: center;
+            margin-top: 2rem;
+            font-size: 4rem;
+        }
+
+        #buttons{
+            margin: auto;
+            margin-top: 4rem;
+            text-align: center;
+            display: flex;
+            justify-content: space-around;
+            
+            .sort-btn{
+                color: #333;
+                background-color: #fff;
+                // border: 1px solid $lightBlack;
+                padding: 0.4rem 1.5rem;
+                box-shadow: 3px 3px 5px $lightBlack;
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
